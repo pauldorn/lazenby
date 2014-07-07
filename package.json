@@ -13,6 +13,7 @@
   "author": "Paul Dorn",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.2.0",
     "express": "^4.5.1",
     "knockout": "^3.1.0",
     "morgan": "^1.1.1",

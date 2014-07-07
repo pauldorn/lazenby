@@ -36,6 +36,17 @@ requirejs(['express', 'morgan', 'path', 'fs'], function(express, morgan, path, f
 
         });
     });
+
+    app.get('/getTests', function(req, res){
+        fs.readdir(path.join('tests', req.query.testYear, req.query.testMonth), function(err, files){
+            if(err) {
+                res.json({ error: err});
+            } else {
+                res.json({ data: files });
+            }
+
+        });
+    });
 //	app.route('/', function(req, res){
 //		res.send('Hello World');
 //	});
