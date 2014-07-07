@@ -1,0 +1,1 @@
+This project is a starter framework for the a test reporting platform
